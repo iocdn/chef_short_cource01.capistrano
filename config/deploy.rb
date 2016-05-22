@@ -18,7 +18,7 @@ CHEF_CLIENT_URL = 'https://packages.chef.io/stable/el/6/chef-12.10.24-1.el6.x86_
 CHEF_CLIENT_VERSION = CHEF_CLIENT_URL.match(/chef-(?<version>\d+\.\d+).*$/)['version']
 
 # 既存のchef-repoを一旦削除してから展開
-FORCE=true
+FORCE = true
 
 
 # ログレベル
