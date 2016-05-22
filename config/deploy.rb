@@ -20,6 +20,7 @@ CHEF_CLIENT_VERSION = CHEF_CLIENT_URL.match(/chef-(?<version>\d+\.\d+).*$/)['ver
 # 既存のchef-repoを一旦削除してから展開
 FORCE = true
 
+SSH_USER = ENV['USER']
 
 # ログレベル
 set :log_level, :debug
@@ -30,7 +31,7 @@ set :application, 'chef'
 set :pty, true
 
 on roles(:all) do |host|
-  host.user = SSH_USER
+#  host.user = SSH_USER
 end
 
 # server情報の生成
@@ -46,6 +47,16 @@ end
 ########################################################################################
 #  TASK
 ########################################################################################
+
+########################################
+# ruby の書式チェック
+task :ruby_c do
+  run_locally do
+    Dir.glob("#{CHEF_REPO}/**/**/*.rb").each do |_f|
+      system("sudo chef exec ruby -c #{_f} 1>/dev/null")
+    end
+  end
+end
 
 ########################################
 # 環境別ノード情報の表示

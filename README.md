@@ -73,3 +73,8 @@ $ chef exec cap development mem
 ```
 $ chef exec cap development console
 ```
+
+- ruby の書式チェック(超簡易版)
+```
+$ chef exec cap development ruby_c
+```
