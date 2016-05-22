@@ -6,6 +6,8 @@
 リモートノードは左記のように設定する chef-repo/node/環境名/ノード名.json
 
 # 本サンプルの使い方
+本サンプルのコマンドは chef-repoディレクトリ直下で実行してください。
+
 ## capistranoのインストールと初期設定
 - インストール
 
@@ -22,7 +24,7 @@ $ chef exec cap install
 
 - 本サンプルの配置
 ```
- $ wget https://raw.githubusercontent.com/iocdn/chef_short_cource01.capistrano/master/config/deploy.rb  -o config/deploy.rb
+ $ wget https://raw.githubusercontent.com/iocdn/chef_short_cource01.capistrano/master/config/deploy.rb  -O config/deploy.rb
 ```
 
 - 環境変数ファイルの作成
