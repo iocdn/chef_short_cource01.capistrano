@@ -20,6 +20,11 @@ $ chef exec cap install
  automation features?  (Yes/no): no  <== 自動更新no
 ```
 
+- 本サンプルの配置
+```
+ $ wget https://raw.githubusercontent.com/iocdn/chef_short_cource01.capistrano/master/config/deploy.rb  -o config/deploy.rb
+```
+
 - 環境変数ファイルの作成
 ```
 $ touch config/deploy/development.rb
