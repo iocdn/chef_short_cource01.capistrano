@@ -63,8 +63,13 @@ chef exec cap chef:all
 ```
 $chef exec cap development list_server
 ```
+
 - ノードのuptime,freeメモリの確認
 ```
 $ chef exec cap development uptime
 $ chef exec cap development mem
+```
+- ノードに対して一括でコマンド実行
+```
+$ chef exec cap development console
 ```
