@@ -9,7 +9,7 @@
 本サンプルのコマンドは chef-repoディレクトリ直下で実行してください。
 
 ## capistranoのインストールと初期設定
-- インストール
+- capistranoのインストール
 
 ```
 $ chef exec gem install capistrano
@@ -31,7 +31,7 @@ $ chef exec cap install
 ```
 $ touch config/deploy/development.rb
 ```
-## リモートノードの登録手順
+## リモートノードの登録
 - リモートノード情報の作成
 ```
 $ knife node create node1
