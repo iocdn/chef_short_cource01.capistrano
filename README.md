@@ -15,6 +15,12 @@
 $ chef exec gem install capistrano
 ```
 
+- gitのインストール
+
+```
+$ yum -y install git
+```
+
 - capistrano基本ファイルの生成
 
 ```
