@@ -18,6 +18,7 @@ $ chef exec gem install capistrano
 - capistrano基本ファイルの生成
 
 ```
+$ cd ~/chef-repo
 $ chef exec cap install
  automation features?  (Yes/no): no  <== 自動更新no
 ```
