@@ -129,7 +129,7 @@ namespace :chef do
   ########################################
   task :archive do
     run_locally do
-      execute("sudo touch #{CHEF_REPO}/client.rb && chown #{SSH_USER}:#{SSH_USER} #{CHEF_REPO}/client.rb")
+      execute("sudo touch #{CHEF_REPO}/client.rb && sudo chown #{SSH_USER}:#{SSH_USER} #{CHEF_REPO}/client.rb")
       execute("sudo tar -czf /tmp/chef-repo.tar.gz -C #{File.dirname(CHEF_REPO)} #{File.basename(CHEF_REPO)} --exclude log")
     end
   end
